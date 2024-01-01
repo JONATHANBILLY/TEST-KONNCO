@@ -15,7 +15,7 @@
             <h5 class="card-title">Detail Pesanan</h5>
             <table>
                  <tr>
-                    <td>ID</td>
+                    <td>Invoice Number</td>
                     <td> : {{$order->id}}</td>
                 </tr>
                 <tr>
