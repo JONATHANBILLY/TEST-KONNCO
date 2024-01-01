@@ -34,10 +34,6 @@
                     <td>Total Harga</td>
                     <td> : {{$order->total_price}}</td>
                 </tr>
-                <tr>
-                    <td>Status</td>
-                    <td> : {{$order->status}}</td>
-                </tr>
             </table>
             <form>
                 <button type="reset" onclick="location.href='/'">Kembali Ke Halaman Utama</button>
