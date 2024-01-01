@@ -55,15 +55,19 @@ integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxV
         window.snap.pay('{{$snapToken}}', {
           onSuccess: function(result){
             /* You may add your own implementation here */
-            alert("payment success!"); console.log(result);
+            // alert("payment success!");
+            window.location.href='/invoice/{{$order->id}}'
+            console.log(result);
           },
           onPending: function(result){
             /* You may add your own implementation here */
-            alert("wating your payment!"); console.log(result);
+            alert("wating your payment!");
+            console.log(result);
           },
           onError: function(result){
             /* You may add your own implementation here */
-            alert("payment failed!"); console.log(result);
+            alert("payment failed!");
+            console.log(result);
           },
           onClose: function(){
             /* You may add your own implementation here */
