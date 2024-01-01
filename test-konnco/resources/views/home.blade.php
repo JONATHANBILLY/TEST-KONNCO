@@ -14,7 +14,7 @@
         <img src="{{asset('assets/img/porsche.png')}}" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">Porsche 911</h5>
-            <p class="card-text">Porsche 911 Irish Green Rp.100,000 per pcs</p>
+            <p class="card-text">Porsche 911 Irish Green Rp.100.000 per pcs</p>
             <form action="/checkout" method="POST">
                 @csrf
                 <div class="mb-3">
