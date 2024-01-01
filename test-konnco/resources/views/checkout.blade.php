@@ -34,11 +34,11 @@
                 </tr>
                 <tr>
                     <td>Quantity</td>
-                    <td> : {{$order->qty}}</td>
+                    <td> : {{ number_format($order->qty, 0, ',', '.') }}</td>
                 </tr>
                 <tr>
                     <td>Total Harga</td>
-                    <td> : {{$order->total_price}}</td>
+                    <td> : Rp. {{ number_format($order->total_price, 0, ',', '.') }}</td>
                 </tr>
             </table>
             <button class="btn btn-primary mt-3" id="pay-button">Bayar Sekarang</button>

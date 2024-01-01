@@ -19,21 +19,21 @@
                 @csrf
                 <div class="mb-3">
                     <label for="qty" class="form-label">Jumlah Pesanan</label>
-                    <input type="number" min="0" value="0" name="qty" class="form-control" id="qty" placeholder="Jumlah yang dipesan">
+                    <input type="number" min="1" value="0" pattern="\d+" name="qty" class="form-control" id="qty" placeholder="Jumlah yang dipesan">
                 </div>
                 <div class="mb-3">
                     <label for="name" class="form-label">Nama Pelanggan</label>
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Masukkan nama pelanggan">
+                    <input type="text" name="name" pattern="[a-zA-Z\s]+" class="form-control" id="name" placeholder="Masukkan nama pelanggan">
                 </div>
                 <div class="mb-3">
                     <label for="phone" class="form-label">Nomor Telepon</label>
-                    <input type="text" name="phone" class="form-control" id="phone" placeholder="Masukkan no telepon">
+                    <input type="tel" name="phone" pattern="\d+" class="form-control" id="phone" placeholder="Masukkan no telepon">
                 </div>
                 <div class="mb-3">
                     <label for="address" class="form-label">Alamat</label>
-                    <textarea name="address" id="address" class="form-control" rows="3" placeholder="Alamat pengiriman/Alamat rumah"></textarea>
+                    <textarea name="address" id="address" pattern="^[a-zA-Z0-9\s]+$" class="form-control" rows="3" placeholder="Alamat pengiriman/Alamat rumah"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary" oninput="validateQTY()">Checkout</button>
+                <button type="submit" class="btn btn-primary">Checkout</button>
             </form>
         </div>
     </div>
