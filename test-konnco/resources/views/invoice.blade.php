@@ -39,6 +39,9 @@
                     <td> : {{$order->status}}</td>
                 </tr>
             </table>
+            <form>
+                <button type="reset" onclick="location.href='/'">Kembali Ke Halaman Utama</button>
+            </form>
         </div>
     </div>
 </div>
